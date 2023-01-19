@@ -1,6 +1,6 @@
 /* SMALL DEVICES */
 
-@media (max-width:756px) {
+@media  (max-width:456px) {
     .row {
         width: 100%;
         align-items: center;
@@ -67,5 +67,74 @@
 
     .row__title {
         font-size: 1.7rem;
+    }
+
+    .section-four {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .meal__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        width: calc(100% /3) ;
+    }
+}
+
+/* MEDIUM */
+@media (max-width:457px) {
+    .meal__container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: calc(100% /2);
+        flex-wrap: wrap;
+    }
+
+    .section-four {
+        width: 100%;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* TABLET DEVICES */
+@media (min-width:700px) and (max-width:992px){
+
+    .meal__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        width: calc(100% /3) !important;
+        flex-wrap: wrap;
+    }
+
+    .section-four {
+        width: 100%;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* DESKTOP */
+@media (max-width:992px) {
+    .meal__container {
+        margin-bottom: 20px;
+        width: calc(100%);
+        display: flex;
+    }
+
+    .section-four {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 }
