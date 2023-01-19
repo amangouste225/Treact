@@ -55,7 +55,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .row__title-p {
@@ -155,7 +156,7 @@
     position: relative;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 50px 5px;
+    padding: 20px 5px;
 }
 
 .row__title {
@@ -242,7 +243,7 @@
 }
 
 .section-three {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
@@ -255,7 +256,8 @@
     align-items: center;
 }
 
-.btn-block a:link,.btn-block a:visited{
+.btn-block a:link,
+.btn-block a:visited {
     display: inline-block;
     padding: 13px 25px;
     margin: 0px 5px;
@@ -264,32 +266,34 @@
     color: rgb(82, 20, 33);
 }
 
-.btn-block a:link:hover,.btn-block a:visited:hover{
+.btn-block a:link:hover,
+.btn-block a:visited:hover {
     background-color: blue;
     color: white !important;
     border-radius: 5px;
     font-weight: 600;
 }
 
-span.btn-block.active a{
+span.btn-block.active a {
     background-color: blue;
     font-weight: 600;
     border-radius: 5px;
     color: white;
 }
-.img-meal__wrapper{
+
+.img-meal__wrapper {
     position: relative;
     overflow: hidden;
     display: flex;
     border-radius: 20px;
 }
 
-.meal__img{
+.meal__img {
     max-height: 200px;
     width: 100%;
 }
 
-.meal__container{
+.meal__container {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -298,7 +302,7 @@ span.btn-block.active a{
     flex-wrap: wrap;
 }
 
-.meal__review{
+.meal__review {
     position: absolute;
     background-color: white;
     border-radius: 25px;
@@ -310,16 +314,19 @@ span.btn-block.active a{
     left: 20px;
 }
 
-.meal__container:hover .meal__img{
+.meal__container:hover .meal__img {
     transform: scale(1.07);
     transition: all 300ms ease-in-out;
+    cursor: no-drop;
 }
 
-.meal__container:hover .meal__title{
-  color: blue;
-  font-weight: bold;
+.meal__container:hover .meal__title {
+    color: blue;
+    font-weight: bold;
+    transition: all 400ms ease-in-out;
 }
-.section-four{
+
+.section-four {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -330,13 +337,15 @@ span.btn-block.active a{
     justify-content: center;
     align-items: center;
 }
-.numbers{
+
+.numbers {
     font-weight: 400 !important;
     color: rgb(175, 147, 147);
     font-size: 12px;
     padding: 0px 5px;
 }
-.meal__review::before{
+
+.meal__review::before {
     font: var(--fa-font-solid);
     content: "\f005";
     color: orange;
@@ -344,7 +353,7 @@ span.btn-block.active a{
     padding: 0px 10px;
 }
 
-.meal__title{
+.meal__title {
     font-size: 18px;
     font-weight: 600;
     display: block;
@@ -352,22 +361,22 @@ span.btn-block.active a{
 }
 
 
-.meal__subtitle{
+.meal__subtitle {
     color: cadetblue;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     display: inline-block;
     padding-top: 3px;
 }
 
-.meal__price{
-font-size: 22px;
-font-weight: 600;
-display: block;
-margin-top: 10px;
+.meal__price {
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
 }
 
-.img__container{
+.img__container {
     display: inline-block;
     position: relative;
 }
