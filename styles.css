@@ -508,6 +508,14 @@ input{
 .copyright__text{
     color: gray;font-weight: 600;
 }
+
+
+.main.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .author{
     font-weight: 300 !important; 
     font-style: italic !important;
@@ -518,4 +526,9 @@ input{
 .author:hover{
    color: blue;
    font-weight: 700 !important;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
 }
