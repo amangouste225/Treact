@@ -3,6 +3,9 @@
     .img-wrapper::before {
         display: none;
     }
+    .btn__menu{
+        display: block;
+     }
 
     .hero {
         width: 100%;
@@ -26,7 +29,9 @@
 
 /* LAPTOP */
 @media screen and (max-width:1000px) {
-
+    .btn__menu{
+        display: none;
+     }
     .section-four {
         width: 100%;
         padding: 0 10px;
@@ -119,7 +124,9 @@
 /* TABLET */
 
 @media screen and (max-width:752px) {
-
+    .btn__menu{
+        display: none;
+     }
 
     .icon-box {
         margin: 0;
@@ -214,6 +221,9 @@
 /* MOBILE */
 @media screen and (max-width:555px) {
 
+    .btn__menu{
+        display: block;
+     }
     .subscrive__form {
         width: 300px;
     }
